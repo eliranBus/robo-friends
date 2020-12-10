@@ -1,0 +1,172 @@
+
+  @font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/SEGA.woff');
+    }
+
+  @font-face {
+    font-family: 'Londrina';
+    font-weight: 200;
+    src: url('./assets/fonts/LondrinaSolid-Thin.ttf');
+    }
+  @font-face {
+    font-family: 'Londrina';
+    font-weight: 300;
+    src: url('./assets/fonts/LondrinaSolid-Light.ttf');
+    }
+  @font-face {
+    font-family: 'Londrina';
+    font-weight: 500;
+    src: url('./assets/fonts/LondrinaSolid-Regular.ttf');
+    }
+  @font-face {
+    font-family: 'Londrina';
+    font-weight: 700;
+    src: url('./assets/fonts/LondrinaSolid-Black.ttf');
+    }
+  
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+        text-align: center;
+  }
+    
+  .text-white {
+    color: white;
+    font-family: "Londrina";
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+  }
+
+  .top-container {
+      padding: 0 10% 3em;
+  }
+
+    h1 {
+      font-family: 'SEGA LOGO FONT';
+      font-size: 3.5em !important;
+      font-weight: 200;
+      color: #0ccac4;
+      text-shadow: 0 9px 28px rgba(0, 0, 0, 0.3222),
+    0 5px 12px rgba(48, 25, 179, 0.082);
+    letter-spacing: 3px;
+    }
+
+    .search-box {
+        margin-bottom: 2em;
+    }
+
+    .search-box input {
+        box-shadow: 0 9px 28px rgba(0, 0, 0, 0.3222),
+    0 5px 12px rgba(48, 25, 179, 0.082);
+    border-radius: 10px;
+    font-family: "Londrina";
+    font-weight: 500;
+    }
+
+    .robots-container {
+        border: 1px solid #9EEBCF;
+        border-radius: 25px;
+        padding: 1.8em 0;
+        background-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 9px 28px rgba(0, 0, 0, 0.3222),
+    0 5px 12px rgba(48, 25, 179, 0.082);
+    }
+
+    .card {
+        width: 23%;
+    }
+
+    .card:hover {
+       cursor: pointer;
+    }
+
+    .card h2 {
+        font-size: 1.6vw;
+        height: 2em;
+        font-family: "Londrina";
+        font-weight: 700;
+    }
+
+    .card p {
+        font-size: 1.2vw;
+        height: 2em;
+        font-family: "Londrina";
+        font-weight: 300;
+    }
+
+    .robot-info {
+        border: 1px solid #9EEBCF;
+        border-radius: 25px;
+        margin: 3em;
+        padding: 0 19%;
+        position: relative;
+    }
+
+    .back-button {
+        font-family: "Londrina";
+        font-size: 1.2em;
+        color: #9EEBCF;
+        position: absolute;
+        right: 2em;
+        bottom: 0.5em;
+    }
+
+    .back-button:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+    .robot-info-details {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        color: white;
+        font-family: "Londrina";
+        letter-spacing: 2px;
+        font-size: 1.1em;
+    }
+
+    .robot-info-details p {
+        letter-spacing: 0.5px;
+    }
+
+    .robot-info-details p b {
+        color: #9EEBCF;
+        font-size: 1.2em;
+    }
+
+    .robot-info img {
+        margin-bottom: -4px;
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+        h1 {
+            font-size: 10vw !important;
+        }
+
+        .search-box input {
+            width: 60%;
+            height: 1vw;
+        }
+
+        .card h2 {
+            font-size: 2.5vw;
+            height: 3em;
+            word-break: break-all;
+
+        }
+    
+        .card p {
+            font-size: 2vw;
+            word-break: break-all;
+        }
+    }
